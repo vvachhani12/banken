@@ -5,7 +5,8 @@ To download node.js vist https://nodejs.org/en/download/ and choose appropriate 
 Using Git Bash or any other CLI interface clone the repository and run the application.
 
 Assumptions:
-    - Banken Bank (this is the default bank that has the accounts and is used to transfer the money and do transaction).
+
+    - Banken Bank (this is the default bank that has the accounts and is used to transfer the money and do transaction)
         - Accounts in Banken Bank
             - Vinit (account number 1234567).
             - John (account number 2345678).
