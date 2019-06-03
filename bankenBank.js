@@ -77,7 +77,7 @@ var banks = [
 
 bankenBank();
 
-//************* Main bamazon function *******************/
+//************* Main banken function *******************/
 function bankenBank(){
     inquirer.prompt([
         {
@@ -125,7 +125,7 @@ function bankenBank(){
     })        
 }
 
-//*************** transferToAccount function to display over all sale ****************/
+//*************** transferToAccount function to transfer to another account within same Banken bank ****************/
 function transferToAccount(){
     // console.log('making transfer to another account');
     let accountOption = [];
@@ -200,6 +200,7 @@ function transferToAccount(){
       })
 }
 
+//*************** newTransfer function that prompts user to ask if they want to make another transaction if not then exit the application ****************/
 function newTransfer(){
     inquirer.prompt([
         {
@@ -217,7 +218,7 @@ function newTransfer(){
     })
 }
 
-//*********** transferToAnotherBank function to display any product whose stock is less than 5 ************/
+//*********** transferToAnotherBank function to transfer to another bank ************/
 function transferToAnotherBank(){
    let bankList = []
    let bankAccounts = []
@@ -329,7 +330,7 @@ function transferToAnotherBank(){
     })
 }
 
-//*********** Function to add stock quantity to the inventory **************/
+//*********** function to see the transfer received from Banken Bank **************/
 function receiveTransfer(){
     inquirer.prompt([
         {
@@ -425,7 +426,7 @@ function receiveTransfer(){
     })
 }
 
-//************ Function to add a new product to the databse ******************/
+//************ Function to see the transfer logs of banken bank account from where the money is transferred ******************/
 function transLog(){
     inquirer.prompt([
         {
@@ -462,7 +463,7 @@ function transLog(){
     })
 }
 
-//************ new product function  *******************/
+//************ Function to check the balance of the Banken bank accounts  *******************/
 function checkBalance(){
     inquirer.prompt([
         {
@@ -493,6 +494,7 @@ function checkBalance(){
     })
 }
 
+//************ Function to get all the bank accounts of banken bank *******************/
 function getBankAcc(){
     var bankAccounts = []
     // inquirer.prompt([
